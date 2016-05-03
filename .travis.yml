@@ -7,7 +7,7 @@ install:
   - pip install git+git://github.com/keboola/python-docker-application.git
 
 env:
-  - KBC_DATA_DIR=./
+  - KBC_DATADIR=./
 
 script:
   - cd ./test/data/
