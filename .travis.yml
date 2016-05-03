@@ -7,8 +7,8 @@ install:
   - pip install git+git://github.com/keboola/python-docker-application.git
 
 env:
-  - KBC_DATADIR=./
+  - KBC_DATADIR=$TRAVIS_BUILD_DIR/test/data/
 
 script:
-  - cd ./test/data/
+  - cd $KBC_DATADIR
   - py.test ./../../
